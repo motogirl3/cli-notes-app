@@ -19,3 +19,16 @@ def delete_note(self, index):
         print(f"Deleted: {removed}")
     except IndexError:
         print("Invalid note number")
+
+def edit_note(self, index, new_text):
+    try:
+        if not new_text.strip():
+            print("Note cannot be empty")
+            return
+
+        old = self.notes[index]
+        self.notes[index] = new_text
+        save_notes(self.notes)
+        print(f"Updated: {old} -> {new_text}")
+    except IndexError:
+        print("Invalid note number")

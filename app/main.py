@@ -15,3 +15,4 @@ while True:
     print("1. Add")
     print("2. Show")
     print("3. Exit")
+input()

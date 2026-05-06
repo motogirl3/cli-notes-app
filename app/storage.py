@@ -9,3 +9,7 @@ def load_notes():
             return json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
         return []
+
+def save_notes(notes):
+    with open(FILE_NAME, "w") as f:
+        json.dump(notes, f, indent=2)

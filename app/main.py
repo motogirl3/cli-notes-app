@@ -3,3 +3,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+from app.notes import NotesApp
+
+def main():
+    app = NotesApp()
+    app.add_note("Test")
+    app.show_notes()

@@ -1,2 +1,7 @@
-# cli-notes-app
-Simple CLI notes application built while learning Python
+# CLI Notes App
+
+Simple command-line notes manager.
+
+## Features
+- Add notes
+- View notes

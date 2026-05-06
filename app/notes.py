@@ -11,3 +11,11 @@ def add_note(self, text):
 def show_notes(self):
     for i, n in enumerate(self.notes, 1):
         print(f"{i}. {n}")
+
+def delete_note(self, index):
+    try:
+        removed = self.notes.pop(index)
+        save_notes(self.notes)
+        print(f"Deleted: {removed}")
+    except IndexError:
+        print("Invalid note number")
